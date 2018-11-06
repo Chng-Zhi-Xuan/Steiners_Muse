@@ -1,0 +1,18 @@
+{
+  "pages": [
+    {
+      "headings": {
+        "introduction": "Introduction",
+        "background": "Background",
+        "the-journey": "The Journey",
+        "critical-analysis": "Critical Analysis",
+        "project-steiner-the-search-for-a-creative-agent": "Project Steiner : The Search For A Creative Agent"
+      },
+      "title": "Project Steiner",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "index.md",
+      "layout": "default"
+    }
+  ]
+}
