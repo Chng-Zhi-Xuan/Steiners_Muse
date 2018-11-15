@@ -6,12 +6,55 @@
         "background": "Background",
         "the-journey": "The Journey",
         "critical-analysis": "Critical Analysis",
+        "what-is-steiners-muse": "What is &quot;Steiner’s Muse&quot;?",
+        "goal": "Goal",
+        "acknowledgements": "Acknowledgements",
+        "resources-used": "Resources used",
+        "processing-midi-files-with-music21": "Processing MIDI Files with music21",
+        "data-representation": "Data Representation",
+        "neural-networks": "Neural Networks",
+        "steiners-muse-prototype-1-note-based-lstm": "Steiner’s Muse Prototype 1 : Note-based LSTM",
+        "steiners-muse-prototype-2-character-based-lstm": "Steiner’s Muse Prototype 2 : Character-based LSTM",
+        "steiners-muse-prototype-25-character-based-with-features-lstm": "Steiner’s Muse Prototype 2.5 : Character-based with Features LSTM",
+        "steiners-muse-final-prototype-3-multi-model-character-based-lstm": "Steiner’s Muse Final Prototype 3 : Multi-model Character-based LSTM",
+        "other-challenges-faced-future-iterations": "Other Challenges Faced / Future Iterations",
+        "motivation-for-project-steiner": "Motivation for Project Steiner",
+        "making-use-of-computer-advancements": "Making use of Computer Advancements",
+        "copyright-implications-in-computer-generated-content": "Copyright Implications in Computer Generated Content",
+        "the-4-affordances-in-steiners-muse": "The 4 affordances in Steiner’s Muse",
         "project-steiner-the-search-for-a-creative-agent": "Project Steiner : The Search For A Creative Agent"
       },
       "title": "Project Steiner",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
       "src": "index.md",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "making-of-steiners-muse": "Making of Steiner's Muse",
+        "steiners-muse-album": "Steiner's Muse Album",
+        "schubert-ai-generated-music": "Schubert - AI Generated Music",
+        "rag-ai-generated-music": "Rag - AI Generated Music",
+        "mozart-ai-generated-music": "Mozart : AI Generated Music",
+        "jazz-ai-generated-music": "Jazz : AI Generated Music",
+        "beethoven-ai-generated-music": "Beethoven : AI Generated Music",
+        "ai-generated-music": "アニメ : AI Generated Music"
+      },
+      "title": "Media",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "media/index.md",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "about-us": "About Us"
+      },
+      "title": "The Team",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "the_team/index.md",
       "layout": "default"
     }
   ]

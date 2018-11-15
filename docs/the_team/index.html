@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Team</title>
+    <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-glyphicons.min.css" >
+    <link rel="stylesheet" href="..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\markbind\css\markbind.css">
+    <link rel="stylesheet" href="..\markbind\layouts\default\styles.css">
+    <link rel="stylesheet" href="..\markbind\css\site-nav.css">
+    
+    
+</head>
+<body>
+<div id="app">
+    <div id="flex-body">
+  <div id="site-nav">
+    <ul style="list-style-type: none; margin-left:-1em">
+      <li style="margin-top: 10px">
+        <h2 id="steiners-muse">Steiner's Muse<a class="fa fa-anchor" href="#steiners-muse"></a></h2>
+      </li>
+      <li style="margin-top: 10px"><a href="/Steiners_Muse/index.html#introduction">Introduction</a></li>
+      <li style="margin-top: 10px"><a href="/Steiners_Muse/index.html#background">Background</a></li>
+      <li style="margin-top: 10px"><a href="/Steiners_Muse/index.html#the-journey">The Journey</a></li>
+      <li style="margin-top: 10px"><a href="/Steiners_Muse/index.html#critical-analysis">Critical Analysis</a></li>
+      <li style="margin-top: 10px">
+        <br></li>
+      <li style="margin-top: 10px">
+        <h2 id="media">Media<a class="fa fa-anchor" href="#media"></a></h2>
+      </li>
+      <li style="margin-top: 10px"><a href="/Steiners_Muse/media/index.html#making-of-steiners-muse">Making of Steiner's Muse</a></li>
+      <li style="margin-top: 10px"><a href="/Steiners_Muse/media/index.html#steiners-muse-album">Curated Album</a></li>
+      <li style="margin-top: 10px">
+        <br></li>
+      <li style="margin-top: 10px">
+        <h2 id="the-team">The Team<a class="fa fa-anchor" href="#the-team"></a></h2>
+      </li>
+      <li style="margin-top: 10px"><a href="/Steiners_Muse/the_team/index.html">About Us</a></li>
+    </ul>
+  </div>
+  <div id="site-nav-btn-wrap">
+    <div id="site-nav-btn">
+      <div class="menu-top-bar"></div>
+      <div class="menu-middle-bar"></div>
+      <div class="menu-bottom-bar"></div>
+    </div>
+  </div>
+  <div id="page-content">
+    <div id="content-wrapper">
+      <navbar placement="top" type="inverse">
+        <a slot="brand" href="/" title="Home" class="navbar-brand">Project Steiner</a>
+        <dropdown text="Sections" class="nav-link">
+          <li><a href="/Steiners_Muse/index.html" class="dropdown-item">Steiner's Muse</a></li>
+          <li><a href="/Steiners_Muse/media/index.html" class="dropdown-item">Media</a></li>
+          <li><a href="/Steiners_Muse/the_team/index.html" class="dropdown-item">About Us</a></li>
+        </dropdown>
+        <li>
+          <a href="https://github.com/Chng-Zhi-Xuan/Steiners_Muse" target="_blank" class="nav-link">
+            Link to Github
+            <svg height="16px" fill="#777" class="octicon octicon-mark-github" viewbox="0 0 16 16" version="1.1" aria-hidden="true">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16  8c0-4.42-3.58-8-8-8z" /></svg></a></li>
+        <li slot="right">
+          <searchbar :data="searchData" placeholder="Search Document" :on-hit="searchCallback" menu-align-right=""></searchbar>
+        </li>
+      </navbar>
+      <br><br>
+      <h1 id="about-us">About Us<a class="fa fa-anchor" href="#about-us"></a></h1>
+      <div>
+        <table style="width:100%" class="table table-responsive">
+          <tr>
+            <th>
+              <div style="font-size:2vw;" class="text-center display-4">
+                <span style="white-space: nowrap">Chng Zhi Xuan</span>
+                <br>
+                <pic src="https://avatars2.githubusercontent.com/u/31084833?s=460&v=4" width="250" alt="Profile Picture"></pic>
+                <p style="white-space: nowrap; font-size: 1.5vw">National University of Singapore</p>
+                <p style="white-space: nowrap; font-size: 1.5vw">Computer Science</p>
+              </div>
+            </th>
+            <th>
+              <div style="font-size:2vw;" class="text-center display-4">
+                <span style="white-space: nowrap">Dominic Kenn Lim</span>
+                <br>
+                <pic src="https://avatars1.githubusercontent.com/u/28517899?s=460&v=4" width="250" alt="Profile Picture"></pic>
+                <br>
+                <p style="white-space: nowrap; font-size: 1.5vw">National University of Singapore</p>
+                <p style="white-space: nowrap; font-size: 1.5vw">Computer Science</p>
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <div class="text-center">
+                <a href="https://github.com/Chng-Zhi-Xuan" class="btn btn-dark btn-lg" role="button">Github <span class="fab fa-github"></span></a>
+                <a href="https://www.linkedin.com/in/zhi-xuan-chng-a650b7159/" class="btn btn-primary btn-lg" role="button">LinkedIn <span class="fab fa-linkedin"></span></a></div>
+            </td>
+            <td>
+              <div class="text-center">
+                <a href="https://github.com/dominickenn" class="btn btn-dark btn-lg" role="button">Github <span class="fab fa-github"></span></a>
+                <a href="https://www.linkedin.com/in/dominic-kenn-lim-57202912a/" class="btn btn-primary btn-lg" role="button">LinkedIn <span class="fab fa-linkedin"></span></a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <br><br>
+    </div>
+  </div>
+</div>
+<div id="flex-div"></div>
+<footer class="text-center bg-dark text-warning">
+  <span>⏳</span> El Psy Congroo <span>🍌</span>
+  <br>
+  <small class="text-white">[Generated using <a href="https://markbind.github.io/markbind/">MarkBind 1.14.0</a>]<small></small></small></footer>
+</div>
+</body>
+<script src="..\markbind\js\vue.min.js"></script>
+<script src="..\markbind\js\vue-strap.min.js"></script>
+<script src="..\markbind\js\polyfill.min.js"></script>
+<script src="..\markbind\js\bootstrap-vue.min.js"></script>
+<script>
+    const baseUrl = '/Steiners_Muse'
+</script>
+<script src="..\markbind\js\setup.js"></script>
+<script src="..\markbind\layouts\default\scripts.js"></script>
+</html>

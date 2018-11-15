@@ -23,9 +23,25 @@
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
       <li style="margin-top: 10px">
-        <h2 id="sections">Sections<a class="fa fa-anchor" href="#sections"></a></h2>
+        <h2 id="steiners-muse">Steiner's Muse<a class="fa fa-anchor" href="#steiners-muse"></a></h2>
       </li>
-      <li style="margin-top: 10px"><a href="/Steiners_Muse/index.html">Main Documentation <span class="far fa-file-alt"></span></a></li>
+      <li style="margin-top: 10px"><a href="/Steiners_Muse/index.html#introduction">Introduction</a></li>
+      <li style="margin-top: 10px"><a href="/Steiners_Muse/index.html#background">Background</a></li>
+      <li style="margin-top: 10px"><a href="/Steiners_Muse/index.html#the-journey">The Journey</a></li>
+      <li style="margin-top: 10px"><a href="/Steiners_Muse/index.html#critical-analysis">Critical Analysis</a></li>
+      <li style="margin-top: 10px">
+        <br></li>
+      <li style="margin-top: 10px">
+        <h2 id="media">Media<a class="fa fa-anchor" href="#media"></a></h2>
+      </li>
+      <li style="margin-top: 10px"><a href="/Steiners_Muse/media/index.html#making-of-steiners-muse">Making of Steiner's Muse</a></li>
+      <li style="margin-top: 10px"><a href="/Steiners_Muse/media/index.html#steiners-muse-album">Curated Album</a></li>
+      <li style="margin-top: 10px">
+        <br></li>
+      <li style="margin-top: 10px">
+        <h2 id="the-team">The Team<a class="fa fa-anchor" href="#the-team"></a></h2>
+      </li>
+      <li style="margin-top: 10px"><a href="/Steiners_Muse/the_team/index.html">About Us</a></li>
     </ul>
   </div>
   <div id="site-nav-btn-wrap">
@@ -40,7 +56,9 @@
       <navbar placement="top" type="inverse">
         <a slot="brand" href="/" title="Home" class="navbar-brand">Project Steiner</a>
         <dropdown text="Sections" class="nav-link">
-          <li><a href="/Steiners_Muse/index.html" class="dropdown-item">Main Documentation</a></li>
+          <li><a href="/Steiners_Muse/index.html" class="dropdown-item">Steiner's Muse</a></li>
+          <li><a href="/Steiners_Muse/media/index.html" class="dropdown-item">Media</a></li>
+          <li><a href="/Steiners_Muse/the_team/index.html" class="dropdown-item">About Us</a></li>
         </dropdown>
         <li>
           <a href="https://github.com/Chng-Zhi-Xuan/Steiners_Muse" target="_blank" class="nav-link">
@@ -55,7 +73,7 @@
       <div>
         <h1 id="project-steiner-the-search-for-a-creative-agent">Project Steiner : The Search For A Creative Agent<a class="fa fa-anchor" href="#project-steiner-the-search-for-a-creative-agent"></a></h1>
       </div>
-      <panel header="## Introduction" type="primary" no-close="">
+      <panel header="## Introduction" type="primary" no-close="" expanded="">
         <div>
           <h3 id="what-is-steiners-muse">What is &quot;Steiner’s Muse&quot;?<a class="fa fa-anchor" href="#what-is-steiners-muse"></a></h3>
         </div>
@@ -105,7 +123,7 @@
           </ul>
         </div>
       </panel>
-      <panel header="## Background" type="info" no-close="">
+      <panel header="## Background" type="info" no-close="" expanded="">
         This section provides the knowledge needed to understand how Stein’s Muse works. We assume a rudimentary understanding of what a midi file is.
         <div>
           <h3 id="processing-midi-files-with-music21">Processing MIDI Files with music21<a class="fa fa-anchor" href="#processing-midi-files-with-music21"></a></h3>
@@ -181,7 +199,7 @@
           Simply put, previous outputs are taken into account as they are fed back into the network. In particular, LSTMs, a type of recurrent neural network, excels at remembering histories. In this project, we have implemented our model with LSTMs.
         </div>
       </panel>
-      <panel header="## The Journey" type="success" no-close="">
+      <panel header="## The Journey" type="success" no-close="" expanded="">
         This section documents the insights gained during prototyping, and the relevant transformations our model undertook.
         <br><br>
         <div>
@@ -209,12 +227,12 @@
             Also, due to the way the notes were read, there was no distinguishable accompaniment and melody in the generated music.
             <br><br>
             <strong>Music Generated</strong>
-            <br>
-            <span class="bg-warning"> INSERT MUSIC HERE </span>
-            <br>
-            The music generated was terrifying. However, with the lessons learned, we moved on to our next prototype.
-          </p>
+            <br></p>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/530165130&color=#ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          <br>
+          The music generated was terrifying. However, with the lessons learned, we moved on to our next prototype.
         </div>
+        <br><br>
         <div>
           <h3 id="steiners-muse-prototype-2-character-based-lstm">Steiner’s Muse Prototype 2 : Character-based LSTM<a class="fa fa-anchor" href="#steiners-muse-prototype-2-character-based-lstm"></a></h3>
           <p>The 2nd prototype was inspired by “How to Generate Music using a LSTM Neural Network in Keras” by <a href="https://towardsdatascience.com/how-to-generate-music-using-a-lstm-neural-network-in-keras-68786834d4c5">Sigurour Skuli</a>.
@@ -240,12 +258,12 @@
             However, there were shortcomings to the model. As the velocity was fixed, there was no sense of accompaniment and melody due to the same volumes for every note. There was also a loss of emotion in the generated music, which is often provided by volume variation. Also, due to the fixed offset, there was no variation in tempo for the music generated. This resulted in mundane music that at least made sense.
             <br></p>
           <p><strong>Music Generated</strong>
-            <br>
-            <span class="bg-warning"> INSERT MUSIC HERE </span>
-            <br>
-            Here is a sample of the music generated by this model.
-          </p>
+            <br></p>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/playlists/644294589&color=#ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          <br>
+          Here is a sample of the music generated by this model.
         </div>
+        <br><br>
         <div>
           <h3 id="steiners-muse-prototype-25-character-based-with-features-lstm">Steiner’s Muse Prototype 2.5 : Character-based with Features LSTM<a class="fa fa-anchor" href="#steiners-muse-prototype-25-character-based-with-features-lstm"></a></h3>
           <p>In an attempt to overcome the shortcomings in prototype 2, prototype 2.5 was designed to include velocity, offset and duration variation.
@@ -276,19 +294,20 @@
           <p>A sample input for each of the models is described as such (not in actual scale):</p>
           <div class="text-center">
             <pic src="/Steiners_Muse/images/multiModelLSTM_model.png" alt="one hot encoding visual"></pic>
+            <br>
+            The outputs from each model are combined to form the generated music.
           </div>
-          The outputs from each model are combined to form the generated music.
           <br>
           <p><strong>Insights Gained</strong>
             <br>
             Splitting the problem up for multiple networks proved to be a great idea for reducing the computational power required. Although the results are not as great as other state-of-the-art music generators out there, we feel that there has been tremendous progress for 2 weeks.
             <br></p>
           <p><strong>Music Generated</strong>
-            <br>
-            <span class="bg-warning"> INSERT MUSIC HERE </span>
-            <br>
-            Here is a sample of the music generated by Steiner’s Muse.
-          </p>
+            <br></p>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/playlists/641063427&color=#ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          <br>
+          Here is a sample of the music generated by Steiner’s Muse.
+          <br><br>
         </div>
         <div>
           <h3 id="other-challenges-faced-future-iterations">Other Challenges Faced / Future Iterations<a class="fa fa-anchor" href="#other-challenges-faced-future-iterations"></a></h3>
@@ -298,11 +317,10 @@
             <br><br>
             In future iterations, we hope to be able to prepare larger datasets for the model to train with.
             <br><br>
-            Also, the current model is limited to piano instrumentals only. It would be interesting to train the model on multi-instrumental compositions, and allow the model to compose orchestras. However, the undertaking of such a task requires large computational power, which is currently a restriction.
-          </p>
+            Also, the current model is limited to piano instrumentals only. It would be interesting to train the model on multi-instrumental compositions, and allow the model to compose orchestras. However, the undertaking of such a task requires large computational power, which is currently a restriction.</p>
         </div>
       </panel>
-      <panel header="## Critical Analysis" type="warning" no-close="">
+      <panel header="## Critical Analysis" type="warning" no-close="" expanded="">
         <div>
           <h3 id="motivation-for-project-steiner">Motivation for Project Steiner<a class="fa fa-anchor" href="#motivation-for-project-steiner"></a></h3>
           <p>Steiner’s Muse experimentation and journey was motivated by GET1033 course material, in particular Machine Learning (ML) and Artificial Intelligence (AI). Most of today’s application in ML and AI is cold and practical, commonly used to solve business problems, in the form of Big Data and Data Analytics.
@@ -311,8 +329,7 @@
             <br><br>
             Generating music using ML is not a new concept. Marvelous computer composers such as Emily Howell (2009) are able to generate piano pieces, whilst recently, Aiva (2016) is able to generate full scale orchestras.
             <br><br>
-            Project Steiner aims to explore the limits of generating music of different genres (jazz, classical, video game, anime etc.) using ML.
-          </p>
+            Project Steiner aims to explore the limits of generating music of different genres (jazz, classical, video game, anime etc.) using ML.</p>
         </div>
         <div>
           <h3 id="making-use-of-computer-advancements">Making use of Computer Advancements<a class="fa fa-anchor" href="#making-use-of-computer-advancements"></a></h3>
@@ -345,7 +362,7 @@
         </div>
         <div>
           <h3 id="the-4-affordances-in-steiners-muse">The 4 affordances in Steiner’s Muse<a class="fa fa-anchor" href="#the-4-affordances-in-steiners-muse"></a></h3>
-          <p>This is a representation in any digital format or genre methodology, inspired from <a href="https://inventingthemedium.com/four-affordances/">Janet H. Murray</a></p>
+          <p>This is a representation methodology for any digital format or genre, inspired from <a href="https://inventingthemedium.com/four-affordances/">Janet H. Murray</a></p>
           <p><strong>Procedural</strong>
             <br>
             Within Steiner’s Muse, the procedural aspect might seem low as we are only able to perceive the generated music. However, to gain the capabilities to generate the music, Steiner’s Muse first has to form its own understanding of music composition. After giving it a dataset to study, Steiner’s Muse follows a sequence of rules for learning (a series of calculations). After Steiner’s Muse has created its own judgements on music, it can now follow its own set of rules to generate its own music, when given a sample of music to kickstart the process. Hence, the procedural aspect is high in Steiner’s Muse.
